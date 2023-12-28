@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Đăng nhập tài khoản - Mua sắm online | Shopee Việt Nam</title>
     <link
             rel="shortcut icon"
@@ -21,10 +21,24 @@
             rel="stylesheet"
             href="./asset/bootstrap-5.3.2-dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="./asset/css/login.css" />
+    <link rel="stylesheet" href="./asset/css/login.css"/>
     <link rel="stylesheet" href="./asset/css/loginResponsive.css">
 </head>
-<body>
+
+<% Boolean checkLogin = (Boolean) session.getAttribute("checkLogin") ;%>
+
+<script>
+
+    function loginfailed() {
+        if (<%=checkLogin%>) {
+            alert("Đăng nhập thất bại, vui lòng xem lại thông tin")
+            <%    HttpSession httpSession = request.getSession();
+            httpSession.setAttribute("checkLogin",false); %>
+        }
+    }
+
+</script>
+<body onload="loginfailed()">
 <!-- Begin Login Header -->
 <div class="login-header">
     <div class="login-header-bar">
@@ -60,7 +74,7 @@
             </div>
             <div class="login-container-content-item-1-bottom">
                 <div class="login-container-content-item-1-bottom-text">
-                    Nền tảng thương mại điện tử <br />
+                    Nền tảng thương mại điện tử <br/>
                     yêu thích ở Đông Nam Á & Đài Loan
                 </div>
             </div>
@@ -76,7 +90,7 @@
                     method="post"
             >
                 <div class="login-container-content-item-2-form-header">
-                    <div class="login-container-content-item-2-form-header-item1" >
+                    <div class="login-container-content-item-2-form-header-item1">
                         Đăng nhập
                     </div>
                     <div class="login-container-content-item-2-form-header-item2">
@@ -221,10 +235,10 @@
 <!-- Begin Login Footer-->
 <div class="login-footer">
     <p class="login-footer-text">
-        <b>Case Study Module 3 - JSP/Servlet Web</b> <br />
-        <br />
-        <b>Reference:</b> Shopee VN Page <br />
-        <b>Team members:</b> <br />
+        <b>Case Study Module 3 - JSP/Servlet Web</b> <br/>
+        <br/>
+        <b>Reference:</b> Shopee VN Page <br/>
+        <b>Team members:</b> <br/>
         Lam Chi Hung | Nguyen Thoi An | Nguyen Minh Phuong
     </p>
 </div>
