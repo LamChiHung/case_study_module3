@@ -102,7 +102,7 @@ html {
 
 /* tao icon lien ket cho facebook va instagram */
 .header-navbar-background {
-    background-image: url(icon.png);
+    background-image: url(../img/icon.png);
 }
 
 .header-navbar-facebook-png {
@@ -237,7 +237,7 @@ svg:not(:root) {
 .shopee-avatar {
     width: 1.375rem;
     height: 1.375rem;
-    background-image: url(user.png);
+    background-image: url(/asset/img/user.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -343,8 +343,8 @@ svg:not(:root) {
     top: -4px;
     bottom: -4px;
     right: 7px;
-    padding: var(--focus-indicator-spacing);
-    outline: var(--focus-indicator-stroke-width) solid var(--focus-indicator-color);
+    /*padding: var(--focus-indicator-spacing);*/
+    /*outline: var(--focus-indicator-stroke-width) solid var(--focus-indicator-color);*/
     content: "";
     border-radius: 2px;
     margin: calc(var(--focus-indicator-spacing)*-1);
@@ -861,7 +861,7 @@ img {
     width: 60px;
     height: 60px;
 
-    background-image: url(logo-store.jpg);
+    /*background-image: url(logo-store.jpg);*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -978,9 +978,9 @@ button {
     overflow: visible;
     outline: 0;
     background: rgba(255, 87, 34, .1);
-    background: var(--brand-primary-light-color);
+    background: var(rgba(255, 87, 34, .1));
     color: #ee4d2d;
-    border: 1px solid var(--brand-primary-color);
+    border: 1px solid rgba(0, 0, 0, .03);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .03);
 
 
@@ -991,8 +991,8 @@ button {
 
 .icon-add-to-cart {
     margin-right: 10px;
-    color: var(--brand-primary-color, #ee4d2d);
-    stroke: var(--brand-primary-color, #ee4d2d);
+    color:  #ee4d2d;
+    stroke:  #ee4d2d;
     font-size: 1.25rem;
 }
 
@@ -1123,7 +1123,7 @@ button {
     background: rgba(255, 87, 34, .1);
     /* background: var(--brand-primary-light-color); */
     color: #ee4d2d;
-    border: 1px solid var(--brand-primary-color);
+    border: 1px solid #ee4d2d;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .03);
     height: 34px;
     padding: 0 15px;

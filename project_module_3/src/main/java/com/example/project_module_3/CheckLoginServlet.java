@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet {
+public class CheckLoginServlet extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String email = request.getParameter("login-email");

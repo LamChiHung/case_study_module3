@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./asset/css/product_detail.css">
 </head>
 
 <body>
@@ -211,7 +212,9 @@
 
                         </div>
                         <div class="header-between-cart">
-                            <div class="stardust-popover" id="cart_drawer_target_id" style="position: relative;">
+                            <div class="stardust-popover"
+<%--                                 id="cart_drawer_target_id"--%>
+                                 style="position: relative;">
                                 <div role="button" class="stardust-popover__target">
                                     <div class="cart-drawer-container"><a class="cart-drawer flex v-center"
                                             id="cart_drawer_target_id" href="">
@@ -267,6 +270,7 @@
                             <span class="KmiQIK" tabindex="0">Điện Thoại Nubia Red Magic 6s Pro Cyborg 12GB 128GB
                                 Mới Nguyên Seal Fullbox
                                 Máy Siêu Đẹp Loixi 1 Đổi 1
+                            </span>
                         </div>
 
 
@@ -495,6 +499,7 @@
                                                 đã bán</div>
                                         </div><button class="complain">Tố cáo</button>
                                     </div>
+
                                     <div style="margin-top: 10px;">
                                         <!-- <div class="O4v6r9"> -->
                                         <div style="margin-top: 1.5625rem; padding: 0 1.25rem;">
@@ -714,15 +719,20 @@
 
 
                                         <div style="margin-top: 30px; border-top: 1px solid rgba(0, 0, 0, 0.05);">
-                                            <div class="commit"><a target="_blank" rel="noopener noreferrer"
-                                                    href="https://shopee.vn/m/shopee-dam-bao" class="center"><img
+                                            <div class="commit">
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="https://shopee.vn/m/shopee-dam-bao" class="center">
+                                                    <img
                                                         src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/83e10a1f95cb083579c089448ef8dd3b.png"
                                                         class="logo-shopee-commit">
                                                     <span class="shopee-commit">Shopee Đảm Bảo</span>
-                                                    <span style="    color: rgba(0,0,0,.54);">3 Ngày Trả
-                                                        Hàng / Hoàn Tiền</span></a></div>
+                                                    <span style=" color: rgba(0,0,0,.54);">3 Ngày Trả
+                                                        Hàng / Hoàn Tiền</span>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <!-- </div> -->
+                                    </div>
+                                </div>
                             </section>
                         </section>
 
@@ -825,6 +835,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 
 </html>
