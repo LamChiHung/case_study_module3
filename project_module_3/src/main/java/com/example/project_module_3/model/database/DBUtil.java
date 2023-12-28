@@ -25,7 +25,7 @@ public class DBUtil {
             DriverManager.registerDriver(driver);
             String url = "jdbc:mysql://localhost:3306/case_study_module3";
             String username = "root";
-            String password = "123456";
+            String password = "Hoanglekha@123";
             connection = DriverManager.getConnection(url,username,password);
         } catch (SQLException e) {
             e.printStackTrace();
