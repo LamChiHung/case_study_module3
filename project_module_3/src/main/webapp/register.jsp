@@ -90,7 +90,7 @@
                     <div class="login-container-content-item-2-form-body-item-1">
                         <input
                                 type="email"
-                                name="login-email"
+                                name="register-email"
                                 class="login-container-content-item-2-form-body-item-1-inputEmail"
                                 placeholder="Email"
                                 required
@@ -108,7 +108,7 @@
                                     type="password"
                                     class="login-container-content-item-2-form-body-item-1-inputPassword"
                                     placeholder="Mật khẩu"
-                                    name="login-password"
+                                    name="register-password"
                                     id="login-password";
                                     required
                                     onkeyup="checkInput(),messageCheckInput()"
@@ -138,7 +138,7 @@
                                     type="password"
                                     class="login-container-content-item-2-form-body-item-1-inputCorrectPassword"
                                     placeholder="Nhập lại mật khẩu"
-                                    name="login-correct-password"
+                                    name="register-correct-password"
                                     id="login-correct-password"
                                     required
                                     onkeyup="checkValidCorrectPassword(), checkInput()"
