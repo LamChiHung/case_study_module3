@@ -12,17 +12,20 @@ public class CheckLoginServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String email = request.getParameter("login-email");
         String password = request.getParameter("login-password");
+        HttpSession httpSession = request.getSession();
         String url;
-
+        httpSession.setAttribute("checkLogin",false);
         UsersJDBC usersJDBC = new UsersJDBC();
         if (
                 usersJDBC.checkValueExists(email, password)
         ) {
-            HttpSession httpSession = request.getSession();
+
             httpSession.setAttribute("emailUser", email);
             url = "index.jsp";
         } else {
-            url = "failure.jsp";
+            url = "login.jsp";
+            httpSession.setAttribute("checkLogin",true);
+
         }
 
         response.sendRedirect(request.getContextPath() + url);
